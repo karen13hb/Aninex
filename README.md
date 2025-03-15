@@ -55,10 +55,15 @@ Jest: Framework de pruebas utilizado para realizar tests unitarios y de integrac
 El proyecto se organiza de la siguiente manera:
 
 **src/app:** Contiene la estructura principal de la aplicación, incluyendo componentes, páginas, contextos, hooks y modelos.
+
 **src/app/components:** Componentes reutilizables (Alert, Card, Modal, Nav, Spinner) que componen la interfaz de usuario.
+
 **src/app/favorites y src/app/homePage:** Páginas principales de la aplicación, que gestionan las vistas de favoritos y la página de inicio respectivamente.
+
 **src/app/context:** Implementación del contexto global (por ejemplo, ModalContext) para manejar estados compartidos.
+
 **src/app/models:** Definición de tipos y estructuras de datos relacionadas con animes, que facilitan la integración con APIs o la gestión de datos internos.
+
 **Tests:** Pruebas unitarias organizadas en subdirectorios dentro de cada componente o página para asegurar el correcto funcionamiento de la aplicación.
 
 
