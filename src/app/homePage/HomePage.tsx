@@ -31,7 +31,7 @@ export default function HomePage() {
       const params = new URLSearchParams();
       if (filters.search) params.set("search", filters.search);
       if (filters.genre) params.set("genre", filters.genre);
-      if (filters.year) params.set("year", filters.year.toString());
+      if (filters.seasonYear) params.set("year", filters.seasonYear.toString());
       if (filters.season) params.set("season", filters.season);
       if (filters.status) params.set("status", filters.status);
       const queryString = params.toString();
@@ -46,7 +46,7 @@ export default function HomePage() {
   
 
   const isFiltering = Boolean(
-    filters.search || filters.genre || filters.year || filters.season || filters.status
+    filters.search || filters.genre || filters.seasonYear || filters.season || filters.status
   );
 
   const { animes: filteredAnimes, loading: loadingFiltered, error: errorFiltered } =
@@ -82,7 +82,7 @@ export default function HomePage() {
               <span className="mr-2 font-bold text-gray">Results for:</span>
               {filters.search && <span className="mr-2 text-gray">search: {filters.search}</span>}
               {filters.genre && <span className="mr-2 text-gray">| genre: {filters.genre}</span>}
-              {filters.year && <span className="mr-2 text-gray">| year: {filters.year}</span>}
+              {filters.seasonYear && <span className="mr-2 text-gray">| year: {filters.seasonYear}</span>}
               {filters.season && <span className="mr-2 text-gray">| season: {filters.season}</span>}
               {filters.status && <span className="mr-2 text-gray">| status: {filters.status}</span>}
               <button
@@ -91,7 +91,7 @@ export default function HomePage() {
                   setFilters({
                     search: "",
                     genre: "",
-                    year: undefined,
+                    seasonYear: undefined,
                     season: undefined,
                     status: "",
                   });

@@ -1,7 +1,7 @@
 export default interface Filters {
     search?: string;
     genre?: string;
-    year?: number;
+    seasonYear?: number;
     season?: "WINTER" | "SPRING" | "SUMMER" | "FALL";
     status?: string;
 }

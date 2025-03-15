@@ -64,18 +64,18 @@ export default function FormAnimes({ filters, onFilterChange }: FormAnimesProps)
           </select>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700" htmlFor="year">Year</label>
+          <label className="block text-sm font-medium text-gray-700" htmlFor="seasonYear">Year</label>
           <select
-            name="year"
-            id="year"
-            value={filters.year ?? ""}
+            name="seasonYear"
+            id="seasonYear"
+            value={filters.seasonYear ?? ""}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg"
           >
             <option value="">--- select ---</option>
-            {[2021, 2022, 2023, 2024, 2025].map((year) => (
-              <option key={year} value={year}>
-                {year}
+            {[2021, 2022, 2023, 2024, 2025].map((seasonYear) => (
+              <option key={seasonYear} value={seasonYear}>
+                {seasonYear}
               </option>
             ))}
           </select>
