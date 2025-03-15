@@ -85,6 +85,8 @@ export const fetchAnimeList = async (
     season: season?.trim() || (type === "season" ? "WINTER" : undefined),
     seasonYear: seasonYear || (type === "season" ? 2025 : undefined),
     status: status?.trim() || undefined,
+    type:"ANIME",
+    isAdult:false
   };
 
   const data = await fetchGraphQL<AnimeListResponse>(query, variables);
