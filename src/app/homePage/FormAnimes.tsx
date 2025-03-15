@@ -47,10 +47,10 @@ export default function FormAnimes({ filters, onFilterChange }: FormAnimesProps)
           </div>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700" htmlFor="genres">Genres</label>
+          <label className="block text-sm font-medium text-gray-700" htmlFor="genre">Genres</label>
           <select
-          id="genres"
-            name="genres"
+            id="genre"
+            name="genre"
             value={filters.genre ?? ""}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg"
