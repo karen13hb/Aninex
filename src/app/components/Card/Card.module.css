@@ -1,0 +1,53 @@
+.imageShadow {
+    border-radius: 10px;
+}
+.infoCard{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.animeCard{
+    min-width: 10%;
+    max-width: calc(100% / 6 - 26px)
+}  
+.cardTitle{
+    text-transform: capitalize;
+    color: #8F8F8F;
+    font-weight: 700;
+}
+.customButton{
+    cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+    .animeCard {
+      min-width: 10%; 
+      max-width: calc(100% / 3 - 26px)
+    }
+  }
+@media screen and (max-width: 768px) {
+    .animeCard {
+      min-width: 20%; 
+      max-width: calc(100% / 2 - 26px)
+    }
+  
+    .cardTitle {
+      font-size: 1rem; 
+    }
+  }
+  
+ 
+  @media screen and (max-width: 480px) {
+    .animeCard {
+      min-width: 90%;
+    }
+  
+    .cardTitle {
+      font-size: 0.9rem;
+    }
+  
+    .customButton {
+      font-size: 0.8rem;
+      padding: 0.5rem; 
+    }
+  }

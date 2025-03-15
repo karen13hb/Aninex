@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+  min-height: 100vh;
+}
+
+.anime-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+h1{
+  color: #8F8F8F;
+  font-weight: 700;
+}
+.text-gray{
+  color: #8F8F8F;
+}
+
+.close-button {
+  background: #0D7377;
+  padding: 1px 6px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .anime-list{
+    justify-content: center;
+  } 
+}
+

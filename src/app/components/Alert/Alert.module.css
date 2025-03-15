@@ -1,0 +1,20 @@
+.alert {
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+  }
+  
+  .success {
+    background-color: green;
+    color: white;
+  }
+  
+  .error {
+    background-color: red;
+    color: white;
+  }
+  
+  .warning {
+    background-color: yellow;
+    color: black;
+  }
