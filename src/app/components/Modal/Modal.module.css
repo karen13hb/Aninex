@@ -59,4 +59,20 @@
     display: flex;
     justify-content: center;
   }
+ 
+  @media screen and (max-width: 480px) {
+    .modalContent {
+      width: 80%;
+      height: 90vh;
+      border-radius: 10px;
+
+    }
+    .itemsAnime{
+      flex-direction: column;
+    }
+    #iframe-trailer{
+      width: 90%;
+    }
+  }
+
   

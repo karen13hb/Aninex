@@ -89,7 +89,7 @@ export default function Modal() {
               </div>
               {anime.trailer && anime.trailer.site === "youtube" && (
                 <div className={styles.videoContainer}>
-                  <iframe
+                  <iframe id="iframe-trailer"
                     className="rounded-lg"
                     width="80%"
                     height="315"
